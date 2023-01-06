@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
+import Banner from './assets/components/banner'
 import axios from 'axios'
 import './App.css'
 import ChangeLocation from './assets/Components/ChangeLocation'
@@ -31,7 +32,10 @@ function App() {
      < ChangeLocation random={random} setRandom={setRandom}/>
      
      
+     <Banner/>
+    
     </div>
+    
   )
 }
 
