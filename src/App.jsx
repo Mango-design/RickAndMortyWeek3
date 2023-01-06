@@ -1,5 +1,6 @@
 import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
+import Banner from './assets/components/banner'
 import axios from 'axios'
 import './App.css'
 
@@ -19,8 +20,13 @@ function App() {
 
   return (
     <div className="App">
-      <h1>{dimensionType?.results?.name}</h1>
+     <Banner/>
+     <h2>{dimensionType.name}</h2>
+     <h2>{dimensionType.type}</h2>
+     <h2>{dimensionType.dimension}</h2>
+     <h2>{dimensionType.residents?.length}</h2>
     </div>
+    
   )
 }
 
