@@ -21,10 +21,26 @@ function App() {
   return (
     <div className="App">
      <Banner/>
-     <h2>{dimensionType.name}</h2>
-     <h2>{dimensionType.type}</h2>
-     <h2>{dimensionType.dimension}</h2>
-     <h2>{dimensionType.residents?.length}</h2>
+     <h1>{dimensionType.name}</h1>
+     <div className='dimension_actual'>
+       
+       <h2>{`Type: ${dimensionType.type}`}</h2>
+       <h2>{`Dimension: ${dimensionType.dimension}`}</h2>
+       <h2>{`Population: ${dimensionType.residents?.length}`}</h2>
+       
+      </div>
+     
+      < ChangeLocation random={random} setRandom={setRandom}/>
+      <h2>{dimensionType.residents?.map(resident =>(
+        <li key={resident}>
+          {resident}
+
+        </li>
+      ))}</h2>
+     
+     
+     
+    
     </div>
     
   )

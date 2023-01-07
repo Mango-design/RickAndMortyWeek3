@@ -5,6 +5,35 @@
 }
 
 .ban{
-    width: 50px;
+    width:100%;
+    height: 250px;
+    padding: 2px;
+}
+.App h1{
+    text-align: center;
+}
+.dimension_actual{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 10px;
+}
+.changeLocation{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+.changeLocation button{
+    width: 180px;
+}
+.changeLocation button:hover{
+    scale: 115%;
     
+}
+.input{
+    width: 100%;
+    
+    height: 40px;
 }
