@@ -5,7 +5,7 @@ import axios from 'axios'
 import './App.css'
 import ChangeLocation from './assets/Components/ChangeLocation'
 import ResidentInfo from './assets/Components/ResidentInfo'
-
+import Title from './assets/Components/Title'
 
 function App() {
 
@@ -39,11 +39,11 @@ function App() {
       < ChangeLocation random={random} setRandom={setRandom}/>
       <h2>{dimensionType.residents?.map(resident =>(
         
-       <ResidentInfo />  
+        <ResidentInfo />
       ))}</h2>
       
      
-     
+     < Title />
      
     
     </div>
