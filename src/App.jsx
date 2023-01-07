@@ -3,20 +3,25 @@ import reactLogo from './assets/react.svg'
 import Banner from './assets/components/banner'
 import axios from 'axios'
 import './App.css'
+import ChangeLocation from './assets/Components/ChangeLocation'
+
 
 function App() {
 
   const [dimensionType, setDimensionType] = useState({})
+  const id = Math.floor(Math.random() * 126) + 1
+  const [random, setRandom] = useState(id)
 
 
 
-
+  
   useEffect(() => {
-    const randomId = Math.floor(Math.random() * 126) + 1;
-    axios
-      .get(`https://rickandmortyapi.com/api/location/${randomId}`)
-      .then((res) => setDimensionType(res.data));
-  }, []);
+           
+   axios.get(`https://rickandmortyapi.com/api/location/${random}`)
+   .then((res) => setDimensionType(res.data));
+  }, [random]);
+ 
+ 
 
   return (
     <div className="App">
