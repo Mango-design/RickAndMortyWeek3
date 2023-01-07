@@ -4,6 +4,7 @@ import Banner from './assets/components/banner'
 import axios from 'axios'
 import './App.css'
 import ChangeLocation from './assets/Components/ChangeLocation'
+import Title from './assets/components/Title'
 
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
         </li>
       ))}</h2>
      
-     
+    <Title/>
      
     
     </div>
