@@ -24,6 +24,8 @@ body{
     background-color: #062226;
     color: white;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 auto;
+    max-width: 1100px;
 }
 .App h1{
     text-align: center;
@@ -56,18 +58,19 @@ body{
 }
 .residentInfo {
     background:#062226;
-    width: 250px;
+    max-width: 250px;
     height: 200px;
     display: inline-block;
     position: relative;
-   
+    margin-left: 80px;
     
 }
 .residentInfo_card{
     font-size: 10px;
     width: 150px;
     padding: 30px;
-    height: 400px;
+    height: 350px;
+    
     
 
 }
@@ -83,7 +86,7 @@ span{
 .status{
     position:absolute;
     top: 25px;
-    left: 45px;
+    left: 35px;
     color: rgb(245, 244, 242);
     background-color: #062226;
     width: 120px;

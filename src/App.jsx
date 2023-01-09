@@ -37,10 +37,10 @@ function App() {
       </div>
      
       <ChangeLocation random={random} setRandom={setRandom}/>
-      <h2>{dimensionType.residents?.map(resident =>(
+      {dimensionType.residents?.map(resident =>(
         
         <ResidentInfo  resident={resident} key={resident}/>
-      ))}</h2>
+      ))}
       
      
      < Title />
