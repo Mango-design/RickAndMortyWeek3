@@ -36,19 +36,10 @@ function App() {
        
       </div>
      
-<<<<<<< HEAD
-      < ChangeLocation random={random} setRandom={setRandom}/>
-      
-      <h2>{dimensionType.residents?.map(resident =>(
-        
-        <ResidentInfo resident ={resident}
-        key={resident} />
-=======
       <ChangeLocation random={random} setRandom={setRandom}/>
       <h2>{dimensionType.residents?.map(resident =>(
         
         <ResidentInfo  resident={resident} key={resident}/>
->>>>>>> e0908e8c03511884166e8f23662923188027cb08
       ))}</h2>
       
      
