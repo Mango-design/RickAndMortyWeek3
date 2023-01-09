@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react'
 import reactLogo from './assets/react.svg'
-import Banner from './assets/components/banner'
+import Banner from './assets/components/Banner'
 import axios from 'axios'
 import './App.css'
 import ChangeLocation from './assets/Components/ChangeLocation'
